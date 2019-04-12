@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="utf-8">
+		<meta name="description" content="A basic template for a Chrome Extension using Twitter Bootstrap 3">
+		<meta name="author" content="Elliot Hesp">
+		
+		<title>Youtube Song Skipper</title>
+		
+		<!-- Scripts -->
+		<script src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="popup.js"></script>
+		
+		<!-- Cascading Style Sheets -->
+		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="css/custom.css" rel="stylesheet" media="screen">		
+    <link href="css/mystyle.css" rel="stylesheet" media="screen">		
+	</head>
+	
+	<body>
+	
+		<nav class="navbar navbar-default" role="navigation">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Skip Youtube songs</a>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					
+					<li>
+						<a  class="danger" id="blockUrl" href="#">
+							<i class="glyphicon glyphicon-thumbs-down danger"></i>
+							<span class="text-danger" >Add to blacklist</span>
+						</a>
+					</li>
+         
+				</ul>
+			</div>
+		</nav>
+		
+		<section>
+      <div class="form-group">
+        <input type="text" id="myInput" placeholder="Search for videos..">  
+      </div>
+			<table id="blockedlinks" class="table table-hover">
+				<thead>
+					<tr>
+						<th>#</th>
+						<th>Title</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					
+				</tbody>
+			</table>
+		</section>
+		
+	</body>
+</html>
